@@ -1,9 +1,9 @@
 {
-  "name": "front-end-starter",
-  "version": "1.1.0",
+  "name": "exact-track",
+  "version": "0.0.1",
   "private": true,
-  "description": "A starter template repo for 'front-end' students",
-  "main": "index.js",
+  "description": "Helping academics glow",
+  "main": "index.html",
   "scripts": {
     "start": "browser-sync start --server --files '*.html, *.css, *.js'"
   },
@@ -11,7 +11,6 @@
     "html-css-js",
     "student"
   ],
-  "author": "Manav Misra",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.13",
