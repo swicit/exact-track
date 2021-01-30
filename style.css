@@ -9,7 +9,23 @@ body {
   font-size: 10px;
 }
 
+header {
+  padding: 1rem 0;
+}
+
 /* Utility Classes */
+.flex {
+  display: flex;
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
