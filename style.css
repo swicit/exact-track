@@ -13,6 +13,13 @@ header {
   padding: 1rem 0;
 }
 
+.hero {
+  background: url(./assets/hero-bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 18vh;
+  width: 100vw;
+}
+
 /* Utility Classes */
 .flex {
   display: flex;
