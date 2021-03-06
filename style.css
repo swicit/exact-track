@@ -9,8 +9,9 @@ body {
   font-size: 10px;
 }
 
-header {
-  padding: 1rem 0;
+header,
+section {
+  padding: 1rem;
 }
 
 ul {
