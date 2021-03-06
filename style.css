@@ -22,6 +22,14 @@ a {
   text-decoration: none;
 }
 
+section {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
 .hero {
   background: url(./assets/hero-bg.jpg) center center no-repeat;
   background-size: cover;
