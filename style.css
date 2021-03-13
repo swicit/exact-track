@@ -10,7 +10,8 @@ body {
 }
 
 header,
-section {
+section,
+footer {
   padding: 1rem;
 }
 
@@ -29,6 +30,12 @@ section {
 
 img {
   max-width: 100%;
+}
+
+footer {
+  background-color: var(--primary-color);
+  font-size: 6px;
+  height: auto;
 }
 
 .hero {
