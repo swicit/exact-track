@@ -19,5 +19,30 @@
       <h1 class="screen-reader-text">Exact Track | Registration</h1>
       <img src="./logo.svg" alt="Exact Track - Helping Academics Grow Logo" />
     </header>
+
+    <main>
+      <section>
+        <h2>Login/Register</h2>
+        <form>
+          <div>
+            <!-- For accessibility, we match `for` with `id` of the `input` -->
+            <label class="screen-reader-text" for="email">✉️</label
+            ><input placeholder="✉️" type="email" name="email" id="email" />
+          </div>
+
+          <div>
+            <label class="screen-reader-text" for="password">Password</label>
+            <input
+              placeholder="Password 🕵🏾‍♂️"
+              type="password"
+              id="password"
+              name="password"
+            />
+          </div>
+
+          <button type="submit" class="button">Login</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

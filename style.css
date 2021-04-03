@@ -1,3 +1,5 @@
+/* TODO: Create a 'card' CSS class to wrap things like our form. */
+
 /* `:root` is a pseudo-selector to make sure that the syles will apply across all of the HTML. */
 :root {
   /* CSS Variables */
@@ -62,6 +64,8 @@ footer {
 /* Utility Classes */
 .button {
   background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
   color: whitesmoke;
   display: inline-block;
   margin: 0.5rem 0;
