@@ -1,6 +1,7 @@
 /* `:root` is a pseudo-selector to make sure that the syles will apply across all of the HTML. */
 :root {
-  /* CSS Variables */
+  --gap-sm: 8px;
+  --gap-md: 16px;
   --primary-color: #7e8959;
   --text-color: #0a3542;
 }
@@ -94,8 +95,20 @@ footer {
   align-items: center;
 }
 
+.flex--column {
+  flex-direction: column;
+}
+
 .flex--justify-center {
   justify-content: center;
+}
+
+.gap-sm {
+  gap: var(--gap-sm);
+}
+
+.gap-md {
+  gap: var(--gap-md);
 }
 
 /* CSS Tricks */
