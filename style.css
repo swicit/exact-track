@@ -1,5 +1,3 @@
-/* TODO: Create a 'card' CSS class to wrap things like our form. */
-
 /* `:root` is a pseudo-selector to make sure that the syles will apply across all of the HTML. */
 :root {
   /* CSS Variables */
@@ -70,6 +68,22 @@ footer {
   display: inline-block;
   margin: 0.5rem 0;
   padding: 0.5rem;
+}
+
+/* https://www.w3schools.com/howto/howto_css_cards.asp */
+.card {
+  border-radius: 4px;
+
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  max-width: 200px;
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flex {
