@@ -23,11 +23,7 @@
     "husky": "^6.0.0",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
-<<<<<<< HEAD
     "socket.io": "^4.0.1",
-=======
-    "socket.io": ">=2.4.0",
->>>>>>> 8eac7ef (:lock: socket and axios for browser-sync)
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
