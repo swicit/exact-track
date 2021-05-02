@@ -12,64 +12,63 @@
     <!-- Custom styles should be after `normalize` to make sure that our rules are taking effect if they are the same selectors as in `normalize`. -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Home | Exact Track</title>
+    <title>Registration/Login | Exact Track</title>
   </head>
   <body>
     <header class="flex flex--justify-center">
-      <h1 class="screen-reader-text">Exact Track</h1>
+      <h1 class="screen-reader-text">Registration/Login</h1>
       <img src="./logo.svg" alt="Exact Track - Helping Academics Grow Logo" />
     </header>
+    <main>
+      <section class="card">
+        <h2>Login/Register</h2>
+        <form class="flex flex--column gap-sm">
+          <div>
+            <label class="screen-reader-text" for="fname">First Name</label
+            ><input
+              placeholder="First Name"
+              type="text"
+              name="fname"
+              id="fname"
+            />
+          </div>
 
-    <div class="hero flex flex--align-center flex--justify-center">
-      <section>
-        <h2>Exact Track is Great Because:</h2>
-        <ul>
-          <li>Reason #1</li>
-          <li>Reason #2</li>
-          <li>Reason #3</li>
-        </ul>
+          <div>
+            <label class="screen-reader-text" for="lname">Last Name</label
+            ><input
+              placeholder="Last Name"
+              type="text"
+              name="lname"
+              id="lname"
+            />
+          </div>
 
-        <a href="./registration/" class="button">Register Now!</a>
+          <div>
+            <!-- For accessibility, we match `for` with `id` of the `input` -->
+            <label class="screen-reader-text" for="fone">✉️</label
+            ><input placeholder="☎️" type="tel" name="fone" id="fone" />
+          </div>
+
+          <div>
+            <!-- For accessibility, we match `for` with `id` of the `input` -->
+            <label class="screen-reader-text" for="email">✉️</label
+            ><input placeholder="✉️" type="email" name="email" id="email" />
+          </div>
+
+          <div>
+            <label class="screen-reader-text" for="password">Password</label>
+            <input
+              placeholder="Password 🕵🏾‍♂️"
+              type="password"
+              id="password"
+              name="password"
+            />
+          </div>
+
+          <button type="submit" class="button">Registration</button>
+        </form>
       </section>
-    </div>
-
-    <section>
-      <h2>Reason #1</h2>
-      <img src="./assets/stock.jpg" alt="Person writing in notebook" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-        asperiores voluptas placeat. Consectetur optio ea illo atque? Quo
-        corporis, velit consectetur quos temporibus doloremque esse in repellat
-        assumenda, similique maxime!
-      </p>
-    </section>
-
-    <section>
-      <h2>Reason #2</h2>
-
-      <!-- TODO: Update these images. -->
-      <img src="./assets/emptyclass.jpg" alt="Empty lecture hall" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
-        distinctio earum possimus quo sapiente corporis, veritatis nihil, sint,
-        delectus soluta ullam quia culpa reiciendis beatae eos voluptatum
-        accusantium provident molestias.
-      </p>
-    </section>
-
-    <section>
-      <h2>Reason #3</h2>
-      <img
-        src="./assets/simplecomp.jpg"
-        alt="Computer and computer mouse on desk"
-      />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-        error doloribus laboriosam quas recusandae? Itaque illo excepturi aut
-        officia dolorem quis? Voluptatum numquam ad soluta culpa minima eos ab
-        sapiente!
-      </p>
-    </section>
+    </main>
 
     <footer>
       <p>
