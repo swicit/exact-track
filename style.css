@@ -159,3 +159,7 @@ footer {
   top: 5px;
   width: auto;
 }
+
+.is-hidden {
+  display: none;
+}

@@ -1,11 +1,39 @@
-// TODO: Toggle the form to show the appropriate fields for which mode we are in.
+const form = document.querySelector("form");
+const inputs = form.querySelectorAll("input");
+
 document.querySelectorAll(".button--text").forEach((button) =>
   button.addEventListener("click", (event) => {
-    console.log(event.target.innerText);
+    console.log();
+
+    // TODO: Based on the button text,
+    // hide and show the relevant form fields.
+    switch (event.target.innerText) {
+      case "Already Have an Account?":
+        Array.from(inputs)
+          .slice(0, inputs.length - 2)
+          .forEach((input) => {
+            input.classList.add("is-hidden");
+          });
+
+        break;
+
+      case "Forgot Password":
+        Array.from(inputs)
+          .slice(0, inputs.length - 1)
+          .forEach((input) => {
+            input.classList.add("is-hidden");
+          });
+        break;
+
+      case "Need To Register?":
+        break;
+      default:
+        console.log("hi");
+    }
   })
 );
 
-document.querySelector("form").addEventListener("submit", (ev) => {
+form.addEventListener("submit", (ev) => {
   ev.preventDefault();
 
   /**
