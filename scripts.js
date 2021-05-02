@@ -1,3 +1,10 @@
+// TODO: Toggle the form to show the appropriate fields for which mode we are in.
+document.querySelectorAll(".button--text").forEach((button) =>
+  button.addEventListener("click", (event) => {
+    console.log(event.target.innerText);
+  })
+);
+
 document.querySelector("form").addEventListener("submit", (ev) => {
   ev.preventDefault();
 
