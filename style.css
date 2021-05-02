@@ -67,8 +67,12 @@ footer {
   border-radius: 4px;
   color: whitesmoke;
   display: inline-block;
-  margin: 0.5rem 0;
   padding: 0.5rem;
+}
+
+.button--text {
+  background: none;
+  color: var(--primary-color);
 }
 
 /* https://www.w3schools.com/howto/howto_css_cards.asp */
@@ -78,8 +82,11 @@ footer {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 0 auto;
-  max-width: 200px;
+  margin-bottom: 2rem;
   transition: 0.3s;
+
+  /* `max-content` will make the width be just wide enough to fit the content. */
+  width: max-content;
 }
 
 /* On mouse-over, add a deeper shadow */
