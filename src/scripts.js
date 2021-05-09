@@ -3,8 +3,6 @@ const inputs = form.querySelectorAll("input");
 
 document.querySelectorAll(".button--text").forEach((button) =>
   button.addEventListener("click", (event) => {
-    console.log();
-
     // TODO: Based on the button text,
     // hide and show the relevant form fields.
     switch (event.target.innerText) {
