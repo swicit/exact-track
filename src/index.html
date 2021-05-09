@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
     <title>Registration/Login | Exact Track</title>
   </head>
   <body>
-    <header class="flex flex--justify-center">
-      <h1 class="screen-reader-text">Registration/Login</h1>
+    <header>
+      <h1 class="text-purple-600">Registration/Login</h1>
       <img src="./logo.svg" alt="Exact Track - Helping Academics Grow Logo" />
     </header>
     <main>
-      <section class="card">
+      <section>
         <h2>Register</h2>
-        <form class="flex flex--column gap-sm">
+        <form>
           <div>
-            <label class="screen-reader-text" for="fname">First Name</label
+            <label for="fname">First Name</label
             ><input
               placeholder="First Name"
               type="text"
@@ -25,7 +27,7 @@
           </div>
 
           <div>
-            <label class="screen-reader-text" for="lname">Last Name</label
+            <label for="lname">Last Name</label
             ><input
               placeholder="Last Name"
               type="text"
@@ -35,19 +37,17 @@
           </div>
 
           <div>
-            <!-- For accessibility, we match `for` with `id` of the `input` -->
-            <label class="screen-reader-text" for="fone">✉️</label
+            <label for="fone">✉️</label
             ><input placeholder="☎️" type="tel" name="fone" id="fone" />
           </div>
 
           <div>
-            <!-- For accessibility, we match `for` with `id` of the `input` -->
-            <label class="screen-reader-text" for="email">✉️</label
+            <label for="email">✉️</label
             ><input placeholder="✉️" type="email" name="email" id="email" />
           </div>
 
           <div>
-            <label class="screen-reader-text" for="password">Password</label>
+            <label for="password">Password</label>
             <input
               placeholder="Password 🕵🏾‍♂️"
               type="password"
@@ -56,12 +56,10 @@
             />
           </div>
 
-          <div class="flex gap-sm" style="margin-top: 1rem">
-            <button type="submit" class="button">Register</button>
-            <button class="button button--text">
-              Already Have an Account?
-            </button>
-            <button class="button button--text">Forgot Password?</button>
+          <div>
+            <button type="submit">Register</button>
+            <button>Already Have an Account?</button>
+            <button>Forgot Password?</button>
           </div>
         </form>
       </section>
