@@ -11,7 +11,7 @@
     "source.organizeImports": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "'Victor Mono', 'Inconsolata', 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Victor Mono', 'Fira Code', 'Inconsolata', 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
@@ -27,14 +27,13 @@
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
   "javascript.validate.enable": false,
+  "kite.codefinder.enableLineDecoration": false,
   "prettier.requireConfig": true,
   "stylelint.enable": true,
   "terminal.integrated.fontFamily": "'Inconsolata', monospace",
-  "workbench.colorTheme": "Material Theme",
+  "workbench.colorTheme": "One Dark Pro",
   "workbench.enableExperiments": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.view.alwaysShowHeaderActions": true,
-  "editor.parameterHints.enabled": false,
-  "ponicode.testSettings.testLocation.locationType": "Same folder as source file",
-  "ponicode.testSettings.testLocation.path": "{rootDir}/{filePath}/{fileName}.test.{ext}"
+  "editor.parameterHints.enabled": false
 }
