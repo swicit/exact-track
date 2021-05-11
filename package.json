@@ -5,8 +5,8 @@
   "description": "Helping academics glow",
   "main": "index.html",
   "scripts": {
-    "start": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "start": "snowpack dev",
+    "build": "snowpack build"
   },
   "keywords": [
     "html-css-js",
@@ -15,9 +15,9 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.2.2",
     "autoprefixer": "^10.2.5",
     "axios": ">=0.21.1",
-    "browser-sync": "^2.26.13",
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.2.0",
@@ -25,8 +25,10 @@
     "husky": "^6.0.0",
     "lint-staged": "^10.5.3",
     "parcel": "^2.0.0-beta.2",
-    "postcss": "^8.2.14",
+    "postcss": "^8.2.15",
+    "postcss-cli": "^8.3.1",
     "prettier": "^2.2.1",
+    "snowpack": "^3.3.7",
     "socket.io": "^4.0.1",
     "tailwindcss": "^2.1.2"
   },
