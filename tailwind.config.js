@@ -1,5 +1,4 @@
 module.exports = {
-  mode: "jit",
   purge: {
     // TODO: Enable for reduction
     enabled: false,
