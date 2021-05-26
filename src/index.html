@@ -8,17 +8,18 @@
     <title>Registration/Login | Exact Track</title>
   </head>
   <body>
-    <header>
-      <h1 class="text-purple-600">Registration/Login</h1>
+    <header class="mb-2 p-4">
+      <h1 class="hidden">Registration/Login</h1>
       <img src="./logo.svg" alt="Exact Track - Helping Academics Grow Logo" />
     </header>
-    <main>
+    <main class="p-4">
       <section>
-        <h2>Register</h2>
-        <form>
+        <h2 class="font-bold mb-2 text-xl">Register For An Account</h2>
+        <form class="mb-4">
           <div>
-            <label for="fname">First Name</label
+            <label class="hidden" for="fname">First Name</label
             ><input
+              class="rounded-md my-2 w-full"
               placeholder="First Name"
               type="text"
               name="fname"
@@ -27,8 +28,9 @@
           </div>
 
           <div>
-            <label for="lname">Last Name</label
+            <label class="hidden" for="lname">Last Name</label
             ><input
+              class="rounded-md my-2 w-full"
               placeholder="Last Name"
               type="text"
               name="lname"
@@ -37,18 +39,31 @@
           </div>
 
           <div>
-            <label for="fone">✉️</label
-            ><input placeholder="☎️" type="tel" name="fone" id="fone" />
+            <label class="hidden" for="fone">✉️</label
+            ><input
+              class="rounded-md my-2 w-full"
+              placeholder="☎️"
+              type="tel"
+              name="fone"
+              id="fone"
+            />
           </div>
 
           <div>
-            <label for="email">✉️</label
-            ><input placeholder="✉️" type="email" name="email" id="email" />
+            <label class="hidden" for="email">✉️</label
+            ><input
+              class="rounded-md my-2 w-full"
+              placeholder="✉️"
+              type="email"
+              name="email"
+              id="email"
+            />
           </div>
 
           <div>
-            <label for="password">Password</label>
+            <label class="hidden" for="password">Password</label>
             <input
+              class="rounded-md my-2 w-full"
               placeholder="Password 🕵🏾‍♂️"
               type="password"
               id="password"
@@ -56,16 +71,27 @@
             />
           </div>
 
-          <div>
-            <button type="submit">Register</button>
-            <button>Already Have an Account?</button>
-            <button>Forgot Password?</button>
-          </div>
+          <button
+            type="submit"
+            class="bg-green-500 text-white px-1 py-1 rounded-sm hover:bg-green-700 shadow-md mt-2"
+          >
+            Register
+          </button>
         </form>
+
+        <div>
+          <button class="hover:text-yellow-500">
+            Already Have an Account?
+          </button>
+        </div>
+
+        <div>
+          <button class="hover:text-yellow-500">Forgot Password?</button>
+        </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="bg-black text-white p-2">
       <p>
         Powered by
         <a href="https://www.swicit.org/" target="_blank">SWIC IT Club</a>
