@@ -13,7 +13,7 @@
       <img src="./logo.svg" alt="Exact Track - Helping Academics Grow Logo" />
     </header>
     <main class="p-4">
-      <section>
+      <section x-data="{mode: 'register'}">
         <h2 class="font-bold mb-2 text-xl">Register For An Account</h2>
         <form class="mb-4">
           <div>
@@ -24,6 +24,7 @@
               type="text"
               name="fname"
               id="fname"
+              x-show.transition="mode==='register'"
             />
           </div>
 
@@ -35,6 +36,7 @@
               type="text"
               name="lname"
               id="lname"
+              x-show.transition="mode==='register'"
             />
           </div>
 
@@ -46,6 +48,7 @@
               type="tel"
               name="fone"
               id="fone"
+              x-show.transition="mode==='register'"
             />
           </div>
 
@@ -68,6 +71,7 @@
               type="password"
               id="password"
               name="password"
+              x-show.transition="mode==='register' || mode==='login'"
             />
           </div>
 
@@ -80,13 +84,15 @@
         </form>
 
         <div>
-          <button class="hover:text-yellow-500">
+          <button class="hover:text-yellow-500" @click="mode='login'">
             Already Have an Account?
           </button>
         </div>
 
         <div>
-          <button class="hover:text-yellow-500">Forgot Password?</button>
+          <button class="hover:text-yellow-500" @click="mode='forgot'">
+            Forgot Password?
+          </button>
         </div>
       </section>
     </main>
