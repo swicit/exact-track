@@ -13,8 +13,18 @@
       <img src="./logo.svg" alt="Exact Track - Helping Academics Grow Logo" />
     </header>
     <main class="p-4">
+      <!-- 'register', 'login', 'forgot' -->
       <section x-data="{mode: 'register'}">
-        <h2 class="font-bold mb-2 text-xl">Register For An Account</h2>
+        <h2 class="font-bold mb-2 text-xl">
+          <template x-if="mode==='register'">
+            <span>Register for a New Account</span>
+          </template>
+          <template x-if="mode==='login'"><span>Login</span></template>
+          <template x-if="mode==='forgot'"
+            ><span>We'll Send a Reset Link!</span></template
+          >
+        </h2>
+
         <form class="mb-4">
           <div>
             <label class="hidden" for="fname">First Name</label
@@ -79,14 +89,26 @@
             type="submit"
             class="bg-green-500 text-white px-1 py-1 rounded-sm hover:bg-green-700 shadow-md mt-2"
           >
-            Register
+            <template x-if="mode==='register'">
+              <span>Register</span>
+            </template>
+
+            <template x-if="mode==='login'">
+              <span>Login</span>
+            </template>
+
+            <template x-if="mode==='forgot'">
+              <span>Email me! ✉️</span>
+            </template>
           </button>
         </form>
 
         <div>
-          <button class="hover:text-yellow-500" @click="mode='login'">
-            Already Have an Account?
-          </button>
+          <button
+            class="hover:text-yellow-500"
+            @click="mode=mode ==='register' ? 'login' : 'register'"
+            x-text="mode === 'register' ? 'Already Have an Account?' : 'Sign Up'"
+          />
         </div>
 
         <div>
