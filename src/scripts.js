@@ -1,4 +1,7 @@
 import "alpinejs";
+import { registerUser } from "./services";
+
+console.log(registerUser);
 
 document.querySelector("form").addEventListener("submit", (ev) => {
   ev.preventDefault();
