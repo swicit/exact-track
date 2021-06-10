@@ -34,5 +34,8 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,md}": "prettier --write"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.2"
   }
 }
