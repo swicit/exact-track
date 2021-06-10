@@ -36,6 +36,7 @@
     "*.{js,md}": "prettier --write"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.3.2"
+    "@tailwindcss/forms": "^0.3.2",
+    "alpinejs": "^2.8.2"
   }
 }
