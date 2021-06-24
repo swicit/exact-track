@@ -1,3 +1,7 @@
-export const registerUser = async ({ email, password }) => {
-  // const { user, session, error } = await supabase.auth.signUp(newUser);
-};
+import client from "./client";
+
+export const registerUser = async ({ email, password }) =>
+  client.auth.signUp({
+    email,
+    password,
+  });
