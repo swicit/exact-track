@@ -87,7 +87,16 @@
 
           <button
             type="submit"
-            class="bg-green-500 text-white px-1 py-1 rounded-sm hover:bg-green-700 shadow-md mt-2"
+            class="
+              bg-green-500
+              text-white
+              px-1
+              py-1
+              rounded-sm
+              hover:bg-green-700
+              shadow-md
+              mt-2
+            "
           >
             <template x-if="mode==='register'">
               <span>Register</span>
@@ -115,6 +124,24 @@
           <button class="hover:text-yellow-500" @click="mode='forgot'">
             Forgot Password?
           </button>
+        </div>
+      </section>
+
+      <section role="alert" class="hidden" id="error">
+        <h2 class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+          ❗ Error!
+        </h2>
+        <div
+          class="
+            border border-t-0 border-red-400
+            rounded-b
+            bg-red-100
+            px-4
+            py-3
+            text-red-700
+          "
+        >
+          <p></p>
         </div>
       </section>
     </main>
