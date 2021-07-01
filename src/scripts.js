@@ -1,8 +1,6 @@
 import "alpinejs";
 import { registerUser } from "./services";
-
-const errorSection = document.getElementById("error");
-const errorSectionP = errorSection.querySelector("p");
+import { errorSection, errorSectionP } from "./services/elements";
 
 document.querySelectorAll("input").forEach((input) => {
   input.addEventListener("focus", () => {
@@ -22,6 +20,8 @@ document.querySelector("form").addEventListener("submit", (ev) => {
       }
     })
     .catch((customError) => {
+      // TODO: Move error message handling to a service
+      // handleError(customError.message);
       errorSectionP.innerText = customError.message;
 
       // Remove 'hidden' class to show the error

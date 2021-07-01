@@ -1,1 +1,1 @@
-export { registerUser } from "./auth";
+export { registerUser } from "./sb/auth";
