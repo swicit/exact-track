@@ -19,7 +19,6 @@
     "@snowpack/plugin-postcss": "^1.4.1",
     "autoprefixer": "^10.2.6",
     "eslint": "^7.28.0",
-    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-xo": "^0.36.0",
     "eslint-plugin-import": "^2.23.4",
@@ -37,6 +36,7 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.2",
-    "alpinejs": "^2.8.2"
+    "alpinejs": "^2.8.2",
+    "firebase": "^8.8.1"
   }
 }
